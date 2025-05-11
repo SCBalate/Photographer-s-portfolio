@@ -76,7 +76,7 @@ const projects: Project[] = [
     id: 6,
     title: "dunamiss cosmetics",
     category: "Reels for Brands",
-    image: "../../Public/assets/Images/Brand3.jpg",
+    image: "../../Public/assets/Images/Brand3.jpg", 
     description: "A automotive commercial with dynamic compositions and lighting",
     videoUrl:"https://www.instagram.com/reel/DBwDaDZBuxF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
