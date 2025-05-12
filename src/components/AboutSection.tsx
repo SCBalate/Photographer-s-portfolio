@@ -12,7 +12,7 @@ const AboutSection: React.FC = () => {
           <div className="lg:w-1/2 relative">
             <div className="relative z-10">
               <img
-                src="../../assets/Images/DSC02015.JPG"
+                src="../assets/Images/DSC02015.JPG"
                 alt="Cinematographer at work"
                 className="w-full max-w-lg mx-auto rounded-sm shadow-xl"
               />
