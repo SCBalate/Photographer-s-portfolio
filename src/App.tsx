@@ -3,11 +3,11 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import PortfolioSection from './components/PortfolioSection';
 import AboutSection from './components/AboutSection';
-import ServicesSection from './components/ServicesSection';
+// import ServicesSection from './components/ServicesSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
-import CustomCursor from './components/CustomCursor';
+// import CustomCursor from './components/CustomCursor';
 import  {Toaster} from "sonner"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Gallery from './components/Gallery';
@@ -44,7 +44,7 @@ function App() {
   return (
     <div className="min-h-screen bg-black text-white">
 <Toaster/>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Router>
       <Navbar />
       <Routes>
@@ -55,7 +55,7 @@ function App() {
               <HeroSection />
               <PortfolioSection />
               <AboutSection />
-              <ServicesSection />
+              {/* <ServicesSection /> */}
               <TestimonialsSection />
           
               <ContactSection />

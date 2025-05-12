@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
     { name: 'Home', href: '/#hero' },
     { name: 'Portfolio', href: '/#portfolio' },
     { name: 'About', href: '/#about' },
-    { name: 'Services', href: '/#services' },
+   
     { name: 'Contact', href: '/#contact' },
     {name:'Gallery',href:'/gallery'}
   ];
@@ -35,9 +35,9 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-        <a href="#hero" className="text-white font-bold text-xl md:text-2xl tracking-wider">
-          LENS<span className="text-amber-500">CRAFT</span>
-        </a>
+        <Link to="/#hero" className="text-white font-bold text-xl md:text-2xl tracking-wider">
+          COOL<span className="text-amber-500">&nbsp;LENS</span>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">

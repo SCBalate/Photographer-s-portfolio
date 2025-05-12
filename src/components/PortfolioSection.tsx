@@ -13,6 +13,70 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {    id: 8,
+    title: "simplique",
+    category: "Digital Champagne Ads",
+    image: "../../assets/Images/simplique.avif",
+    description: "A automotive commercial with dynamic compositions and lighting",
+    videoUrl:"https://www.youtube.com/shorts/6ai2ItdaVG4"
+   
+  },
+  {    id: 88,
+    title: "Tresna Collection",
+    category: "Digital Champagne Ads",
+    image: "../../assets/Images/Tresna Collection.avif",
+    description: "A automotive commercial with dynamic compositions and lighting",
+    videoUrl:"https://www.youtube.com/shorts/OHQ3ciLK3bY"
+   
+  },
+  {    id: 888,
+    title: "EIP Mumabai Event",
+    category: "Digital Champagne Ads",
+    image: "../../assets/Images/EIP Mumbai Event.avif",
+    description: "A automotive commercial with dynamic compositions and lighting",
+    videoUrl:"https://www.youtube.com/shorts/eHOv_HYhy4w"
+   
+  },
+  {    id: 8888,
+    title: "Dunamiss",
+    category: "Digital Champagne Ads",
+    image: "../../assets/Images/Dunamissad.avif",
+    description: "A automotive commercial with dynamic compositions and lighting",
+    videoUrl:"https://www.youtube.com/shorts/ByPR9YjuGzc"
+   
+  },
+  {    id: 88888,
+    title: "Disney Creative",
+    category: "Digital Champagne Ads",
+    image: "../../assets/Images/disney creative.avif",
+    description: "A automotive commercial with dynamic compositions and lighting",
+    videoUrl:"https://www.youtube.com/shorts/plgq8xwBIRA"
+   
+  },
+  {    id: 888888,
+    title: "Alaya F",
+    category: "Digital Champagne Ads",
+    image: "../../assets/Images/Alayaf.avif",
+    description: "A automotive commercial with dynamic compositions and lighting",
+    videoUrl:"https://www.youtube.com/shorts/b6Dbf1fRt-k"
+   
+  },
+  {    id: 8888888,
+    title: "Reel For VM Jewelleries",
+    category: "Digital Champagne Ads",
+    image: "../../assets/Images/vmreel.avif",
+    description: "A automotive commercial with dynamic compositions and lighting",
+    videoUrl:"https://www.youtube.com/shorts/rWUGru9YpZ0"
+   
+  },
+  {    id: 88888888,
+    title: "Advertise For VM Jewelleries",
+    category: "Digital Champagne Ads",
+    image: "https://img.youtube.com/vi/Xv-i8TGP21Y/hqdefault.jpg",
+    description: "A automotive commercial with dynamic compositions and lighting",
+    videoUrl:"https://www.youtube.com/shorts/Xv-i8TGP21Y"
+   
+  },
   {
     id: 1,
     title: "Secrets Revealed",
@@ -97,70 +161,7 @@ const projects: Project[] = [
   description: "A automotive commercial with dynamic compositions and lighting",
   videoUrl:" https://www.instagram.com/reel/C26cAmAtCYj/?igsh=eXBkb3A1bzk3djVr"
 },
-{    id: 8,
-  title: "simplique",
-  category: "Digital Champagne Ads",
-  image: "../../assets/Images/simplique.avif",
-  description: "A automotive commercial with dynamic compositions and lighting",
-  videoUrl:"https://www.youtube.com/shorts/6ai2ItdaVG4"
- 
-},
-{    id: 88,
-  title: "Tresna Collection",
-  category: "Digital Champagne Ads",
-  image: "../../assets/Images/Tresna Collection.avif",
-  description: "A automotive commercial with dynamic compositions and lighting",
-  videoUrl:"https://www.youtube.com/shorts/OHQ3ciLK3bY"
- 
-},
-{    id: 888,
-  title: "EIP Mumabai Event",
-  category: "Digital Champagne Ads",
-  image: "../../assets/Images/EIP Mumbai Event.avif",
-  description: "A automotive commercial with dynamic compositions and lighting",
-  videoUrl:"https://www.youtube.com/shorts/eHOv_HYhy4w"
- 
-},
-{    id: 8888,
-  title: "Dunamiss",
-  category: "Digital Champagne Ads",
-  image: "../../assets/Images/Dunamissad.avif",
-  description: "A automotive commercial with dynamic compositions and lighting",
-  videoUrl:"https://www.youtube.com/shorts/ByPR9YjuGzc"
- 
-},
-{    id: 88888,
-  title: "Disney Creative",
-  category: "Digital Champagne Ads",
-  image: "../../assets/Images/disney creative.avif",
-  description: "A automotive commercial with dynamic compositions and lighting",
-  videoUrl:"https://www.youtube.com/shorts/plgq8xwBIRA"
- 
-},
-{    id: 888888,
-  title: "Alaya F",
-  category: "Digital Champagne Ads",
-  image: "../../assets/Images/Alayaf.avif",
-  description: "A automotive commercial with dynamic compositions and lighting",
-  videoUrl:"https://www.youtube.com/shorts/b6Dbf1fRt-k"
- 
-},
-{    id: 8888888,
-  title: "Reel For VM Jewelleries",
-  category: "Digital Champagne Ads",
-  image: "../../assets/Images/vmreel.avif",
-  description: "A automotive commercial with dynamic compositions and lighting",
-  videoUrl:"https://www.youtube.com/shorts/rWUGru9YpZ0"
- 
-},
-{    id: 88888888,
-  title: "Advertise For VM Jewelleries",
-  category: "Digital Champagne Ads",
-  image: "https://img.youtube.com/vi/Xv-i8TGP21Y/hqdefault.jpg",
-  description: "A automotive commercial with dynamic compositions and lighting",
-  videoUrl:"https://www.youtube.com/shorts/Xv-i8TGP21Y"
- 
-},
+
 
 ];
 

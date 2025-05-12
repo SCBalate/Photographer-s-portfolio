@@ -1,7 +1,9 @@
 import React, { useState,useRef,useEffect } from "react";
 import { Dialog } from "@headlessui/react";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import LazyImage from "./LazyImage/LazyImage";
+import CategorySlider from "./CategorySlider/CategorySlider";
+import "keen-slider/keen-slider.min.css";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
+
 type Categories = {
   [category: string]: string[];
 };
@@ -83,13 +85,13 @@ export default function Gallery(): JSX.Element {
     setActiveIndex((prev) => (prev - 1 + images.length) % images.length);
   };
 
-  const scroll = (category: string, direction: "left" | "right") => {
-    const container = scrollRefs.current[category];
-    if (container) {
-      const scrollAmount = direction === "left" ? -300 : 300;
-      container.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    }
-  };
+  // const scroll = (category: string, direction: "left" | "right") => {
+  //   const container = scrollRefs.current[category];
+  //   if (container) {
+  //     const scrollAmount = direction === "left" ? -300 : 300;
+  //     container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  //   }
+  // };
 
   useEffect(() => {
     const checkOverflow = () => {
@@ -107,46 +109,15 @@ export default function Gallery(): JSX.Element {
 
   return (
     <div className="space-y-12 p-4 mt-10 scroll-m-1" id="gallery">
-      {Object.entries(categories).map(([category, images]) => (
-        <div key={category} className="relative group">
-          <h2 className="text-2xl font-semibold mb-2">{category}</h2>
+     {Object.entries(categories).map(([category, images]) => (
+  <CategorySlider
+    key={category}
+    category={category}
+    images={images}
+    openModal={openModal}
+  />
+))}
 
-          {/* Left Chevron */}
-          {overflowing[category] && (
-            <button
-              onClick={() => scroll(category, "left")}
-             className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-black/50 p-2 rounded-full text-white hidden group-hover:flex items-center  justify-center"
-            >
-              <ChevronLeft size={24} />
-            </button>
-          )}
-
-          {/* Image Strip */}
-          <div
-            ref={(el) => (scrollRefs.current[category] = el)}
-            className="flex overflow-x-auto space-x-4 snap-x scroll-smooth px-8 no-scrollbar"
-          >
-            {images.map((img, i) => (
-              <div key={i} onClick={() => openModal(category, i)}>
-                <LazyImage
-                  src={img}
-                  className="w-64 h-40 object-cover rounded-lg snap-start"
-                />
-              </div>
-            ))}
-          </div>
-
-          {/* Right Chevron */}
-          {overflowing[category] && (
-            <button
-              onClick={() => scroll(category, "right")}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-black/50 p-2 rounded-full text-white hidden group-hover:flex"
-            >
-              <ChevronRight size={24} />
-            </button>
-          )}
-        </div>
-      ))}
 
       {/* Modal */}
       <Dialog open={isOpen} onClose={closeModal} className="relative z-50">

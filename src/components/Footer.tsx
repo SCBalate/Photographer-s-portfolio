@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <a href="#hero" className="text-white font-bold text-xl tracking-wider">
-              LENS<span className="text-amber-500">CRAFT</span>
+              COOL<span className="text-amber-500">&nbsp;LENS</span>
             </a>
             <p className="text-gray-400 mt-2 text-sm">
               Creating visual stories that captivate and inspire.
@@ -26,9 +26,9 @@ const Footer: React.FC = () => {
             <a href="#about" className="text-gray-400 hover:text-amber-500 text-sm uppercase transition-colors duration-300">
               About
             </a>
-            <a href="#services" className="text-gray-400 hover:text-amber-500 text-sm uppercase transition-colors duration-300">
+            {/* <a href="#services" className="text-gray-400 hover:text-amber-500 text-sm uppercase transition-colors duration-300">
               Services
-            </a>
+            </a> */}
             <a href="#contact" className="text-gray-400 hover:text-amber-500 text-sm uppercase transition-colors duration-300">
               Contact
             </a>
