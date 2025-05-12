@@ -46,7 +46,7 @@ const HeroSection: React.FC = () => {
         
         <div className="mt-10">
           <a 
-            href="https://roaring-pegasus-0850e2.netlify.app"
+            href="#portfolio"
             target="_blank"
             rel="noopener noreferrer" 
             className="px-8 py-3 border-2 border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-black transition-all duration-300 uppercase tracking-wider text-sm"
