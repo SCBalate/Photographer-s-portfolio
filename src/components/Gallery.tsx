@@ -2,66 +2,61 @@ import React, { useState,useRef } from "react";
 import { Dialog } from "@headlessui/react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import LazyImage from "./LazyImage/LazyImage";
-// Travel
-import travel1 from '../../Public/assets/Images/GalleryImages/Travel/DSC00098 2.jpg';
-import travel2 from '../../Public/assets/Images/GalleryImages/Travel/DSC00966 (1).jpg';
-import travel3 from '../../Public/assets/Images/GalleryImages/Travel/DSC01956 3.jpg';
-import travel4 from '../../Public/assets/Images/GalleryImages/Travel/DSC02015 (1).jpg';
-import travel5 from '../../Public/assets/Images/GalleryImages/Travel/DSC02032 2.jpg';
-import travel6 from '../../Public/assets/Images/GalleryImages/Travel/DSC02106 2.jpg';
-
-// Portraits
-import portrait1 from '../../Public/assets/Images/GalleryImages/Portrait/IMG_0790.jpg';
-import portrait2 from '../../Public/assets/Images/GalleryImages/Portrait/IMG_0791.jpg';
-import portrait3 from '../../Public/assets/Images/GalleryImages/Portrait/IMG_0795.jpg';
-import portrait4 from '../../Public/assets/Images/GalleryImages/Portrait/IMG_1059 2 (1).jpg';
-import portrait5 from '../../Public/assets/Images/GalleryImages/Portrait/IMG_2773.jpg';
-import portrait6 from '../../Public/assets/Images/GalleryImages/Portrait/IMG_2780.jpg';
-
-// Festivals
-import fest1 from '../../Public/assets/Images/GalleryImages/Festival/IMG_0962.jpg';
-import fest2 from '../../Public/assets/Images/GalleryImages/Festival/IMG_0970.jpg';
-import fest3 from '../../Public/assets/Images/GalleryImages/Festival/IMG_0999.jpg';
-import fest4 from '../../Public/assets/Images/GalleryImages/Festival/DSC00656.jpg';
-import fest5 from '../../Public/assets/Images/GalleryImages/Festival/DSC01268.jpg';
-import fest6 from '../../Public/assets/Images/GalleryImages/Festival/DSC01635.jpg';
-import fest7 from '../../Public/assets/Images/GalleryImages/Festival/DSC02727 2.jpg';
-import fest8 from '../../Public/assets/Images/GalleryImages/Festival/DSC02858 2.jpg';
-import fest9 from '../../Public/assets/Images/GalleryImages/Festival/DSC03219.jpg';
-import fest10 from '../../Public/assets/Images/GalleryImages/Festival/DSC03311.jpg';
-
-// Jewelleries
-import jewel1 from '../../Public/assets/Images/GalleryImages/Jewelleries/IMG_3646 (1).jpg';
-import jewel2 from '../../Public/assets/Images/GalleryImages/Jewelleries/IMG_3647.jpg';
-import jewel3 from '../../Public/assets/Images/GalleryImages/Jewelleries/IMG_3648.jpg';
-import jewel4 from '../../Public/assets/Images/GalleryImages/Jewelleries/IMG_3649.jpg';
-import jewel5 from '../../Public/assets/Images/GalleryImages/Jewelleries/IMG_3650.jpg';
-
-// English Origin
-import eng1 from '../../Public/assets/Images/GalleryImages/EnglishOrigin/001 (1).jpg';
-import eng2 from '../../Public/assets/Images/GalleryImages/EnglishOrigin/002 (1).jpg';
-import eng3 from '../../Public/assets/Images/GalleryImages/EnglishOrigin/002-2.jpg';
-import eng4 from '../../Public/assets/Images/GalleryImages/EnglishOrigin/003.jpg';
-import eng5 from '../../Public/assets/Images/GalleryImages/EnglishOrigin/004.jpg';
-import eng6 from '../../Public/assets/Images/GalleryImages/EnglishOrigin/006.jpg';
-
-// Biotique
-import bio1 from '../../Public/assets/Images/GalleryImages/Biotique/DSC00879 (1).jpg';
-import bio2 from '../../Public/assets/Images/GalleryImages/Biotique/DSC00865.jpg';
-import bio3 from '../../Public/assets/Images/GalleryImages/Biotique/DSC00844.jpg';
-
 type Categories = {
   [category: string]: string[];
 };
 
 const categories: Categories = {
-  Travel: [travel1, travel2, travel3, travel4, travel5, travel6],
-  Portraits: [portrait1, portrait2, portrait3, portrait4, portrait5, portrait6],
-  Festivals: [fest1, fest2, fest3, fest4, fest5, fest6, fest7, fest8, fest9, fest10],
-  Jewelleries: [jewel1, jewel2, jewel3, jewel4, jewel5],
-  English_Origin: [eng1, eng2, eng3, eng4, eng5, eng6],
-  Biotique: [bio1, bio2, bio3]
+  Travel: [
+    "/assets/Images/GalleryImages/Travel/DSC00098 2.jpg",
+    "/assets/Images/GalleryImages/Travel/DSC00966 (1).jpg",
+    "/assets/Images/GalleryImages/Travel/DSC01956 3.jpg",
+    "/assets/Images/GalleryImages/Travel/DSC02015 (1).jpg",
+    "/assets/Images/GalleryImages/Travel/DSC02032 2.jpg",
+    "/assets/Images/GalleryImages/Travel/DSC02106 2.jpg"
+  ],
+  Portraits: [
+    "/assets/Images/GalleryImages/Portrait/IMG_0790.jpg",
+    "/assets/Images/GalleryImages/Portrait/IMG_0791.jpg",
+    "/assets/Images/GalleryImages/Portrait/IMG_0795.jpg",
+    "/assets/Images/GalleryImages/Portrait/IMG_1059 2 (1).jpg",
+    "/assets/Images/GalleryImages/Portrait/IMG_2773.jpg",
+    "/assets/Images/GalleryImages/Portrait/IMG_2780.jpg"
+  ],
+  Festivals: [
+    "/assets/Images/GalleryImages/Festival/IMG_0962.jpg",
+    "/assets/Images/GalleryImages/Festival/IMG_0970.jpg",
+    "/assets/Images/GalleryImages/Festival/IMG_0999.jpg",
+    "/assets/Images/GalleryImages/Festival/DSC00656.jpg",
+    "/assets/Images/GalleryImages/Festival/DSC01268.jpg",
+    "/assets/Images/GalleryImages/Festival/DSC01635.jpg",
+    "/assets/Images/GalleryImages/Festival/DSC02727 2.jpg",
+    "/assets/Images/GalleryImages/Festival/DSC02858 2.jpg",
+    "/assets/Images/GalleryImages/Festival/DSC03219.jpg",
+    "/assets/Images/GalleryImages/Festival/DSC03311.jpg"
+  ],
+  Jewelleries: [
+    "/assets/Images/GalleryImages/Jewelleries/IMG_3646 (1).jpg",
+    "/assets/Images/GalleryImages/Jewelleries/IMG_3647.jpg",
+    "/assets/Images/GalleryImages/Jewelleries/IMG_3648.jpg",
+    "/assets/Images/GalleryImages/Jewelleries/IMG_3649.jpg",
+    "/assets/Images/GalleryImages/Jewelleries/IMG_3650.jpg"
+  ],
+  English_Origin: [
+    "/assets/Images/GalleryImages/EnglishOrigin/001 (1).jpg",
+    "/assets/Images/GalleryImages/EnglishOrigin/002 (1).jpg",
+    "/assets/Images/GalleryImages/EnglishOrigin/002-2.jpg",
+    "/assets/Images/GalleryImages/EnglishOrigin/003.jpg",
+    "/assets/Images/GalleryImages/EnglishOrigin/004.jpg",
+    "/assets/Images/GalleryImages/EnglishOrigin/006.jpg"
+  ],
+  Biotique: [
+    "/assets/Images/GalleryImages/Biotique/DSC00879 (1).jpg",
+    "/assets/Images/GalleryImages/Biotique/DSC00865.jpg",
+    "/assets/Images/GalleryImages/Biotique/DSC00844.jpg"
+  ]
 };
+
 
 export default function Gallery(): JSX.Element {
   const [isOpen, setIsOpen] = useState<boolean>(false);
