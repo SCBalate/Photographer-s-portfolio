@@ -76,7 +76,7 @@ const projects: Project[] = [
     id: 6,
     title: "dunamiss cosmetics",
     category: "Reels for Brands",
-    image: "../../Public/assets/Images/Brand3.jpg", 
+    image: "../../assets/Images/Brand3.jpg", 
     description: "A automotive commercial with dynamic compositions and lighting",
     videoUrl:"https://www.instagram.com/reel/DBwDaDZBuxF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
@@ -85,7 +85,7 @@ const projects: Project[] = [
     id: 7,
     title: "freez_frame_studio04 & silvercloudphotos_and_films",
     category: "Interior Architecture Shoots",
-    image: "../../Public/assets/Images/InterirorShoot.jpg",
+    image: "../../assets/Images/InterirorShoot.jpg",
     description: "A automotive commercial with dynamic compositions and lighting",
     videoUrl:"https://www.instagram.com/reel/C_FzIFlodX6/?igsh=Z3kzc24zdzlxN3I5"
    
@@ -93,14 +93,14 @@ const projects: Project[] = [
 {    id: 77,
   title: "Atulyh_official & suyoglushtefilms",
   category: "Interior Architecture Shoots",
-  image: "../../Public/assets/Images/Atulyh.jpg",
+  image: "../../assets/Images/Atulyh.jpg",
   description: "A automotive commercial with dynamic compositions and lighting",
   videoUrl:" https://www.instagram.com/reel/C26cAmAtCYj/?igsh=eXBkb3A1bzk3djVr"
 },
 {    id: 8,
   title: "simplique",
   category: "Digital Champagne Ads",
-  image: "../../Public/assets/Images/simplique.avif",
+  image: "../../assets/Images/simplique.avif",
   description: "A automotive commercial with dynamic compositions and lighting",
   videoUrl:"https://www.youtube.com/shorts/6ai2ItdaVG4"
  
@@ -108,7 +108,7 @@ const projects: Project[] = [
 {    id: 88,
   title: "Tresna Collection",
   category: "Digital Champagne Ads",
-  image: "../../Public/assets/Images/Tresna Collection.avif",
+  image: "../../assets/Images/Tresna Collection.avif",
   description: "A automotive commercial with dynamic compositions and lighting",
   videoUrl:"https://www.youtube.com/shorts/OHQ3ciLK3bY"
  
@@ -116,7 +116,7 @@ const projects: Project[] = [
 {    id: 888,
   title: "EIP Mumabai Event",
   category: "Digital Champagne Ads",
-  image: "../../Public/assets/Images/EIP Mumbai Event.avif",
+  image: "../../assets/Images/EIP Mumbai Event.avif",
   description: "A automotive commercial with dynamic compositions and lighting",
   videoUrl:"https://www.youtube.com/shorts/eHOv_HYhy4w"
  
@@ -124,7 +124,7 @@ const projects: Project[] = [
 {    id: 8888,
   title: "Dunamiss",
   category: "Digital Champagne Ads",
-  image: "../../Public/assets/Images/Dunamissad.avif",
+  image: "../../assets/Images/Dunamissad.avif",
   description: "A automotive commercial with dynamic compositions and lighting",
   videoUrl:"https://www.youtube.com/shorts/ByPR9YjuGzc"
  
@@ -132,7 +132,7 @@ const projects: Project[] = [
 {    id: 88888,
   title: "Disney Creative",
   category: "Digital Champagne Ads",
-  image: "../../Public/assets/Images/disney creative.avif",
+  image: "../../assets/Images/disney creative.avif",
   description: "A automotive commercial with dynamic compositions and lighting",
   videoUrl:"https://www.youtube.com/shorts/plgq8xwBIRA"
  
@@ -140,7 +140,7 @@ const projects: Project[] = [
 {    id: 888888,
   title: "Alaya F",
   category: "Digital Champagne Ads",
-  image: "../../Public/assets/Images/Alayaf.avif",
+  image: "../../assets/Images/Alayaf.avif",
   description: "A automotive commercial with dynamic compositions and lighting",
   videoUrl:"https://www.youtube.com/shorts/b6Dbf1fRt-k"
  
@@ -148,7 +148,7 @@ const projects: Project[] = [
 {    id: 8888888,
   title: "Reel For VM Jewelleries",
   category: "Digital Champagne Ads",
-  image: "../../Public/assets/Images/vmreel.avif",
+  image: "../../assets/Images/vmreel.avif",
   description: "A automotive commercial with dynamic compositions and lighting",
   videoUrl:"https://www.youtube.com/shorts/rWUGru9YpZ0"
  
