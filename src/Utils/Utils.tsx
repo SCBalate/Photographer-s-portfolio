@@ -24,3 +24,9 @@ export function extractYouTubeId(url: string): string | null {
     return null;
   }
 }
+
+export function getBlurImagePath(imagePath: string): string {
+  const lastDotIndex = imagePath.lastIndexOf('.');
+  if (lastDotIndex === -1) return imagePath; // no extension
+  return imagePath.slice(0, lastDotIndex) + '-blur' + imagePath.slice(lastDotIndex);
+}
