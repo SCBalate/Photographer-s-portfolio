@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
+import { Link  } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,14 +36,23 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-        <Link to="/#hero" className="text-white font-bold text-xl md:text-2xl tracking-wider">
+        <HashLink to="/#hero" className="text-white font-bold text-xl md:text-2xl tracking-wider">
           COOL<span className="text-amber-500">&nbsp;LENS</span>
-        </Link>
+        </HashLink>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
         {navLinks.map((link) =>
-  link.href.startsWith('/') ? (
+  link.href.includes('#') ? (
+    <HashLink
+      key={link.name}
+      to={link.href}
+      smooth
+      className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide text-sm uppercase"
+    >
+      {link.name}
+    </HashLink>
+  ) : (
     <Link
       key={link.name}
       to={link.href}
@@ -50,16 +60,9 @@ const Navbar: React.FC = () => {
     >
       {link.name}
     </Link>
-  ) : (
-    <a
-      key={link.name}
-      href={link.href}
-      className="text-gray-300 hover:text-white transition-colors duration-300 tracking-wide text-sm uppercase"
-    >
-      {link.name}
-    </a>
   )
 )}
+
         </div>
 
         {/* Mobile Navigation Toggle */}

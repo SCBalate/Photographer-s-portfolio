@@ -13,28 +13,21 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "David Chen",
-    role: "Film Director",
-    image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    quote: "Alex's eye for composition and lighting transformed our indie film into a visual masterpiece. His ability to tell a story through the camera is unmatched.",
-    project: "Ethereal - Short Film"
+    name: "Dhanraj Dhanokar",
+    role: "Founder, AIpreneur.in",
+    image: "../../assets/Images/Testimonials/IMG_3757-modified.png",
+    quote: "Working with Cooldeep didn’t feel like just hiring a cinematographer—it felt like teaming up with someone who genuinely cared about our vision. He understood what we were trying to say with our brand and turned that into visuals that spoke louder than words. The result? Way beyond our expectations.",
+    project: "Musical Videos"
   },
   {
     id: 2,
-    name: "Sarah Johnson",
-    role: "Creative Director",
-    image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    quote: "Working with Alex was the best decision for our campaign. His cinematic approach elevated our brand and delivered exactly the premium feel we wanted.",
-    project: "Luxury Watch Campaign"
+    name: "Mohammed Shahidd",
+    role: "Co-founder, House of Content",
+    image: "../../assets/Images/Testimonials/IMG_3758-modified.png",
+    quote: "Cooldeep isn’t just behind the camera—he’s part of the story. Every time we’ve worked together, he’s brought ideas to life in a way that feels effortless but powerful. His passion shows in every frame, and that’s what makes the content truly stand out.",
+    project: "Cosmetics Campaign"
   },
-  {
-    id: 3,
-    name: "Michael Torres",
-    role: "Music Artist",
-    image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    quote: "Alex didn't just shoot my music video; he created a visual experience that perfectly complemented the emotion of the song. Pure creative genius.",
-    project: "Resonance - Music Video"
-  }
+  
 ];
 
 const TestimonialsSection: React.FC = () => {
@@ -90,6 +83,7 @@ const TestimonialsSection: React.FC = () => {
                         src={testimonial.image} 
                         alt={testimonial.name} 
                         className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mx-auto border-4 border-gray-800"
+                        
                       />
                     </div>
                     <div className="md:w-2/3 text-center md:text-left">
