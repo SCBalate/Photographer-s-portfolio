@@ -38,7 +38,7 @@ const ContactSection: React.FC = () => {
           message: formData.message,
           to_email: "kuldeepgwnd21@gmail.com",
         },
-        "ov140DLWkOk0PR6U3" // ← replace with your EmailJS public key
+        "wI7SKKswBGokwmJ9r" // ← replace with your EmailJS public key
       )
       .then(() => {
         
